@@ -70,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
         if (Collider2D.gameObject.CompareTag("Ground"))
         {
             
-            isJumping = true;
+         //   isJumping = true;
             //animator.SetTrigger("Idle");
         }
     }
