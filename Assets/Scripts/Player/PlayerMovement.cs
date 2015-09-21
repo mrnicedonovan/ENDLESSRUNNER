@@ -57,7 +57,45 @@ public class PlayerMovement : MonoBehaviour
                 transform.Translate(Vector2.right * -speed * 2 * Time.deltaTime);
             }
         }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            //  animator.SetBool("trans1", true);
+            transform.Translate(Vector2.right * speed * Time.deltaTime);
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                transform.Translate(Vector2.right * speed * 2 * Time.deltaTime);
+            }
+        }
 
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.Translate(Vector2.right * -speed * Time.deltaTime);
+            //  animator.SetBool("trans1", true);
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                transform.Translate(Vector2.right * -speed * 2 * Time.deltaTime);
+            }
+        }
+
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.Translate(Vector2.up * speed * Time.deltaTime);
+            //  animator.SetBool("trans1", true);
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                transform.Translate(Vector2.right * speed * 2 * Time.deltaTime);
+            }
+        }
+
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.Translate(Vector2.up * -speed * Time.deltaTime);
+            //  animator.SetBool("trans1", true);
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                transform.Translate(Vector2.right * -speed * 2 * Time.deltaTime);
+            }
+        }
 
     }
 
